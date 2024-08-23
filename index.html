@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Khali Auto Repair</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Khali Auto Repair</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Welcome to Khali Auto Repair</h1>
+        <p class="lead">Your Trusted Auto Service Partner</p>
+        <a class="btn btn-primary btn-lg" href="#services" role="button">View Services</a>
+    </div>
+
+    <!-- Features Section -->
+    <div class="container" id="services">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <h3>Brakes & Repair</h3>
+                <img src="path_to_brakes_image.jpg" alt="Brakes Repair" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h3>Oil Change</h3>
+                <img src="path_to_oil_change_image.jpg" alt="Oil Change" class="img-fluid">
+            </div>
+            <div class="col-md-4">
+                <h3>Tire Rotation</h3>
+                <img src="path_to_tire_rotation_image.jpg" alt="Tire Rotation" class="img-fluid">
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <div class="container" id="about">
+        <h2>About Us</h2>
+        <p><strong>Mission:</strong> We are here when you need us.</p>
+        <p><strong>Vision:</strong> To become the Midwest's preference in car auto repair.</p>
+        <p><strong>Objective:</strong> Serve like I would serve myself.</p>
+        <div>
+            <h3>Our Team</h3>
+            <img src="path_to_team_image.jpg" alt="Our Team" class="img-fluid">
+        </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div class="container" id="contact">
+        <h2>Contact Us</h2>
+        <form id="contactForm">
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="name">Full Name</label>
+                <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number</label>
+                <input type="tel" class="form-control" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="service">Service Needed</label>
+                <select class="form-control" id="service">
+                    <option>Brakes & Repair</option>
+                    <option>Oil Change</option>
+                    <option>Tire Rotation</option>
+                    <option>Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="3"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+        <div id="thankYouMessage" class="alert alert-success mt-4 d-none" role="alert">
+            Thank you for contacting us! We'll get back to you soon.
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <div class="container">
+            <p>Follow us on:</p>
+            <a href="https://x.com" class="text-white mx-2">X</a>
+            <a href="https://instagram.com" class="text-white mx-2">Instagram</a>
+            <a href="https://facebook.com" class="text-white mx-2">Facebook</a>
+            <a href="https://yelp.com" class="text-white mx-2">Yelp</a>
+            <p class="mt-3"><a href="#" class="text-white">Privacy Policy</a></p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
